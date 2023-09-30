@@ -1,0 +1,222 @@
+
+body{
+    background-image: linear-gradient(to left, #0F2027, #203A43, #2C5364);
+}
+.fixed-top{
+    /* background-color: rgba(129, 134, 193, 0.724); */
+    background-color: #0F2027;
+    padding: 1rem 5rem; 
+}
+
+.fixed-top *{
+    color: white;
+}
+
+.nav-link:hover {
+    border-bottom:solid 1px rgb(81, 0, 255);
+    
+}
+
+@media screen and (max-width: 991px){
+    .fixed-top{
+    padding: 0%;
+    }
+}
+
+.main-sections{
+    
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.main-sections h3{
+    font-size: 4rem;
+    font-weight: 300;
+    color: bisque;
+    border-bottom: 1px solid;
+
+}
+
+#chartContainer{
+    height: 30rem;
+    width: 100%;
+}
+
+.about-area-wrapper{
+    height: 30rem;
+}
+
+header p{
+    color: rgb(17, 16, 16);
+    position:absolute;
+    top:15%;
+    left: 3%;
+    font-size: 24px;
+    border: solid 1px black;
+    background-color: antiquewhite;
+    padding:2rem;
+    border-radius: 1rem;
+}
+
+
+
+.parallax{
+    background-image: url(../images/crypto-bg.jpg);
+    height: 95vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.parallax h1 {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    align-items: center;
+    color: white;
+    padding: 2rem;
+}
+
+
+.coins-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.card {
+    width: 18rem;
+    height: 18rem;
+    margin: 1rem;
+    position: relative;
+}
+
+.card-title{
+    font-family:sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.information-text {
+    color: black;
+}
+
+.information-button{
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    background-color: rgb(39, 41, 183);
+}
+
+.coin-info{
+    margin-top: 2rem;
+}
+
+
+
+
+.profile-picture{
+    background-image: url(../images/403E00BD-8DD5-457F-B540-8DB58A6FD6FE_1_105_c.jpeg);
+    height:18rem;
+    background-size: cover;
+    border-radius:50%;
+    background-position: center center;
+}
+
+@media screen and (max-width: 991px){
+    .profile-picture{
+    height: 9rem;
+    }
+}
+
+.about-container{
+    background-color: rgba(129, 134, 193, 0.724);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.about-paragraph{
+    padding-top: 2rem;
+    font-size:1.4rem;
+}
+
+/* -------------- */
+
+/* for button toggle :
+    https://alvarotrigo.com/blog/toggle-switch-css/
+*/
+.toggle-button{
+    position: absolute;
+    bottom: 1rem;
+    right: 0.5rem;
+}
+
+.switch input
+{
+    display: none;
+}
+
+.switch 
+{
+    display: inline-block;
+    width: 60px; /*=w*/
+    height: 30px; /*=h*/
+    margin: 4px;
+    transform: translateY(50%);
+    position: relative;
+}
+
+.slider
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 30px;
+    box-shadow: 0 0 0 2px #777, 0 0 4px #777;
+    cursor: pointer;
+    border: 4px solid transparent;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.slider:before
+{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #777;
+    border-radius: 30px;
+    transform: translateX(-30px); /*translateX(-(w-h))*/
+    transition: 0.2s;
+}
+
+input:checked + .slider:before
+{
+    transform: translateX(30px); /*translateX(w-h)*/
+    background-color: limeGreen;
+}
+
+input:checked + .slider
+{
+    box-shadow: 0 0 0 2px limeGreen, 0 0 8px limeGreen;
+}
+/* -------------- */
+
+.modal-body{
+    height: 15rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.modal-toggle-button{
+    margin: 0rem .5rem;
+    
+}
